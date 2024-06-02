@@ -1,9 +1,21 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Lexend } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  preload: true,
+  display: "swap",
+});
+
+const lexend = Lexend({
+  subsets: ["latin"],
+  variable: "--font-lexend",
+  preload: true,
+  display: "swap",
+});
 
 const title = "Steal the Deal - Discover Local Store Discounts Near You";
 const description =
@@ -38,7 +50,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <link rel="icon" href="/favicon.ico" sizes="any" />
-      <body className={inter.className}>
+      <body className={`${inter.variable} ${lexend.variable} font-sans`}>
         <Header />
         {children}
       </body>
