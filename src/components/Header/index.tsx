@@ -3,9 +3,12 @@ import React from "react";
 
 function Header() {
   return (
-    <header className="px-5 py-[10px]">
+    <header className="px-5 py-[10px] max-w-screen-xl m-auto">
       <nav>
-        <Link href={"/"} className="font-lex font-semibold text-[20px]">
+        <Link
+          href={"/"}
+          className="font-lex font-medium text-[20px] sm:text-[28px]"
+        >
           StealThe<span className="text-red-600">Deal</span>
         </Link>
       </nav>

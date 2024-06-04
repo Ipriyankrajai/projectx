@@ -1,10 +1,12 @@
-import { Badge } from "@/components/ui/badge";
+import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import Hero from "@/components/home/Hero";
 
 export default function Home() {
   return (
-    <section className="max-w-screen-lg m-auto mt-5">
-      <h1>Hello,</h1>
-      <Badge>Steal The Deal</Badge>
-    </section>
+    <main>
+      <MaxWidthWrapper>
+        <Hero />
+      </MaxWidthWrapper>
+    </main>
   );
 }
