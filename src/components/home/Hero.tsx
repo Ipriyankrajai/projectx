@@ -9,7 +9,10 @@ function Hero() {
         Discover local store discont near you!
       </h1>
       <div className="flex flex-wrap max-w-xl m-auto gap-2 items-center">
-        <Input placeholder="Serach for brands" />
+        <Input
+          placeholder="Serach for brands"
+          className="flex-1 ring-1 ring-ring"
+        />
         <Button>Serach</Button>
       </div>
     </section>
