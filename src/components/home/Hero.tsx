@@ -6,7 +6,7 @@ function Hero() {
   return (
     <section>
       <h1 className="font-medium text-3xl py-10 text-center">
-        Discover local store discont near you!
+        Discover local store discount near you!
       </h1>
       <div className="flex flex-wrap max-w-xl m-auto gap-2 items-center">
         <Input
