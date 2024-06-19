@@ -20,6 +20,10 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['var(--font-inter)'],
+        lex: ['var(--font-lexend)'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
